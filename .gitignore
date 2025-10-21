@@ -1,0 +1,17 @@
+# Ignorar pastas de arquivos
+0. Arquivados/
+myenv/
+node_modules/
+.vercel/
+.claude/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Ambientes virtuais Python
+venv/
+env/
+*.pyc
+__pycache__/

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Irmãos Polícia - Guia de Estudos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="Irmãos Polícia" class="logo-img">
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#metodo">O Método</a></li>
+                    <li><a href="#estudo">Como Estudar</a></li>
+                    <li><a href="#revisoes">Revisões</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- O Método -->
+        <section id="metodo" class="section section-method">
+            <div class="container">
+                <h2 class="section-title">Como Funciona o Método Irmãos Polícia</h2>
+
+                <div class="method-circles">
+                    <div class="circle-item" onclick="showDetail('videoaula')">
+                        <div class="circle-wrapper">
+                            <div class="circle-number">1</div>
+                            <div class="circle-icons-dual">
+                                <div class="icon-video">🎥</div>
+                                <div class="icon-pdf">📄</div>
+                            </div>
+                        </div>
+                        <h4>Estudo da Teoria</h4>
+                        <p>Videoaula OU PDF, conforme sua preferência.</p>
+                    </div>
+
+                    <div class="circle-arrow">→</div>
+
+                    <div class="circle-item" onclick="showDetail('resumo')">
+                        <div class="circle-wrapper">
+                            <div class="circle-number">2</div>
+                            <div class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Resumo</h4>
+                        <p>Acompanhe a aula com o resumo esquematizado para fixar o conteúdo.</p>
+                    </div>
+
+                    <div class="circle-arrow">→</div>
+
+                    <div class="circle-item" onclick="showDetail('questoes')">
+                        <div class="circle-wrapper">
+                            <div class="circle-number">3</div>
+                            <div class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Questões</h4>
+                        <p>Resolver questões e ajustar o resumo conforme os erros.</p>
+                    </div>
+
+                    <div class="circle-arrow">→</div>
+
+                    <div class="circle-item circle-extra">
+                        <div class="circle-wrapper extra">
+                            <div class="circle-number">Extra</div>
+                            <div class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg">
+                                    <path d="M3 3h18v18H3zM12 8v8m-4-4h8"></path>
+                                    <path d="M8 3v3M16 3v3M8 18v3M16 18v3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Lei Seca</h4>
+                        <p>Lei seca com questões e cronograma lei seca.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Estudar -->
+        <section id="estudo" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Como Estudar - Passo a Passo</h2>
+
+                <div class="study-methods">
+                    <div class="method-tabs">
+                        <button class="tab-btn active" onclick="showMethod('pdf')">Estudar por PDF</button>
+                        <button class="tab-btn" onclick="showMethod('video')">Estudar por Vídeo</button>
+                        <button class="tab-btn" onclick="showMethod('exercicios')">Fazer Exercícios</button>
+                    </div>
+
+                    <!-- PDF Method -->
+                    <div id="pdf-method" class="method-content active">
+                        <h3>Como Estudar por PDF</h3>
+                        <div class="alert alert-warning">
+                            <strong>⚠️ Importante:</strong> Assistir aula NÃO é estudar! A leitura do PDF será sua principal aliada.
+                        </div>
+
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Entender onde o conhecimento se encaixa</h4>
+                                    <p>Compartimentalize o conhecimento na sua cabeça. É como separar objetos por função em casa.</p>
+                                    <div class="example">
+                                        <strong>Exemplo:</strong>
+                                        <ul>
+                                            <li>Direito Administrativo
+                                                <ul>
+                                                    <li>Poderes Administrativos</li>
+                                                    <li>Atos Administrativos</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Imprimir resumo e fazer anotações</h4>
+                                    <p>Leia e grife o que achar importante. Essas anotações serão cruciais nas revisões.</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Logo após a teoria, faça questões</h4>
+                                    <p>Você só aprende fazendo questões. É colocar a teoria em prática!</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Sempre faça as revisões previstas</h4>
+                                    <p>Você vai decorar mesmo é na revisão, não no estudo inicial.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="study-forms">
+                            <h4>4 Formas de Estudar:</h4>
+                            <div class="forms-list">
+                                <div class="form-item">1️⃣ Revisão + exercícios</div>
+                                <div class="form-item">2️⃣ Leitura do PDF + revisão + exercícios</div>
+                                <div class="form-item">3️⃣ Videoaula + revisão + exercícios</div>
+                                <div class="form-item">4️⃣ Videoaula + Leitura do PDF + revisão + exercícios</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Method -->
+                    <div id="video-method" class="method-content">
+                        <h3>Como Assistir Videoaulas</h3>
+                        <div class="alert alert-info">
+                            <strong>💡 Atenção:</strong> Videoaula é confortável, mas pode ser um método de baixa retenção se feito passivamente.
+                        </div>
+
+                        <div class="video-tips">
+                            <div class="tip-card">
+                                <div class="tip-icon">📋</div>
+                                <h4>1. Tenha Material Escrito</h4>
+                                <p>Sempre acompanhe com o resumo impresso</p>
+                            </div>
+
+                            <div class="tip-card">
+                                <div class="tip-icon">⚡</div>
+                                <h4>2. Velocidade 1.5x ou Mais</h4>
+                                <p>Otimize seu tempo assistindo mais rápido</p>
+                            </div>
+
+                            <div class="tip-card">
+                                <div class="tip-icon">🎯</div>
+                                <h4>3. Resolva Antes do Professor</h4>
+                                <p>Quando aparecer exercício, tente resolver primeiro</p>
+                            </div>
+
+                            <div class="tip-card">
+                                <div class="tip-icon">📌</div>
+                                <h4>4. Use em 3 Ocasiões</h4>
+                                <p>• Quando estiver nas metas<br>• Quando tiver dificuldade no PDF<br>• Para revisar quando cansado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exercícios Method -->
+                    <div id="exercicios-method" class="method-content">
+                        <h3>Como Fazer Exercícios</h3>
+
+                        <div class="alert alert-success">
+                            <strong>✅ Regra de Ouro:</strong> Fazer os mesmos exercícios pelo menos 3 vezes. REPETIÇÃO é a chave!
+                        </div>
+
+                        <div class="exercise-tips">
+                            <div class="exercise-step">
+                                <span class="badge">1</span>
+                                <p><strong>Faça questões após cada tópico</strong> - Não deixe para depois!</p>
+                            </div>
+
+                            <div class="exercise-step">
+                                <span class="badge">2</span>
+                                <p><strong>Veja o comentário imediatamente</strong> - Confira após cada questão, não em lote</p>
+                            </div>
+
+                            <div class="exercise-step">
+                                <span class="badge">3</span>
+                                <p><strong>Marque as questões importantes (Caderno de alavancagem)</strong> - Dúvidas, erros e que resumem bem a matéria</p>
+                            </div>
+
+                            <div class="exercise-step">
+                                <span class="badge">4</span>
+                                <p><strong>Calcule seu percentual</strong> - Acima de 70% está ótimo na primeira passada</p>
+                            </div>
+
+                            <div class="exercise-step">
+                                <span class="badge">5</span>
+                                <p><strong>Repita pelo menos 3 vezes</strong> - Cada repetição aprofunda o conhecimento. A cada repetição/revisão foque em aumentar seu percentual de acerto no assunto</p>
+                            </div>
+                        </div>
+
+                        <div class="caderno-alavancagem">
+                            <h4>📚 Caderno de Alavancagem</h4>
+                            <p>Separe 3 tipos de questões:</p>
+                            <div class="question-types">
+                                <div class="q-type">❌ Questões que você erra</div>
+                                <div class="q-type">❓ Questões com dúvida</div>
+                                <div class="q-type">⭐ Questões que resumem bem o assunto</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Revisões -->
+        <section id="revisoes" class="section">
+            <div class="container">
+                <h2 class="section-title">Sistema de Revisões Espartana</h2>
+                <p class="section-intro">Você vai decorar mesmo é na revisão, não no estudo inicial!</p>
+
+                <div class="revision-types">
+                    <div class="revision-card">
+                        <div class="revision-header">
+                            <div class="revision-icon">⏰</div>
+                            <h3>Revisão de 24 Horas</h3>
+                        </div>
+                        <div class="revision-body">
+                            <p class="revision-time">Para cada 1h de estudo = 10 min de revisão</p>
+                            <p>Revisão rápida no dia seguinte ao contato com a matéria</p>
+                            <div class="revision-badge">Rápida</div>
+                        </div>
+                    </div>
+
+                    <div class="revision-card">
+                        <div class="revision-header">
+                            <div class="revision-icon">📦</div>
+                            <h3>Revisão em Bloco</h3>
+                        </div>
+                        <div class="revision-body">
+                            <p class="revision-time">A cada 2-3 assuntos novos</p>
+                            <p>Reveja anotações/resumos + 20 min de exercícios específicos</p>
+                            <div class="revision-badge">Moderada</div>
+                        </div>
+                    </div>
+
+                    <div class="revision-card">
+                        <div class="revision-header">
+                            <div class="revision-icon">🎯</div>
+                            <h3>Revisão Geral</h3>
+                        </div>
+                        <div class="revision-body">
+                            <p class="revision-time">90 a 120 minutos</p>
+                            <p>Revise TODOS os assuntos estudados na matéria</p>
+                            <div class="revision-badge">Completa</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revision-method">
+                    <h3>Como Fazer Revisão Ativa</h3>
+                    <div class="active-revision">
+                        <div class="ar-step">
+                            <span class="ar-number">1</span>
+                            <p><strong>Busque na memória primeiro</strong> - Tente lembrar do conteúdo sem olhar o material</p>
+                        </div>
+                        <div class="ar-arrow">↓</div>
+                        <div class="ar-step">
+                            <span class="ar-number">2</span>
+                            <p><strong>Confirme com seu material</strong> - Leia seu resumo e confirme o que lembrou</p>
+                        </div>
+                        <div class="ar-arrow">↓</div>
+                        <div class="ar-step">
+                            <span class="ar-number">3</span>
+                            <p><strong>Resolva o Caderno de Alavancagem</strong> - Faça as questões importantes que separou</p>
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <strong>🚫 Nunca revise apenas lendo!</strong> A revisão deve ser sempre ATIVA!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dicas de Consistência -->
+        <section id="dicas" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Como Criar Consistência nos Estudos</h2>
+
+                <div class="tips-grid">
+                    <div class="tip-box">
+                        <div class="tip-header">
+                            <span class="tip-emoji">🎯</span>
+                            <h4>Deixe o Estudo Fácil</h4>
+                        </div>
+                        <p>Não dê passos maiores que a perna. Comece com o que consegue fazer. Antes feito que perfeito!</p>
+                    </div>
+
+                    <div class="tip-box">
+                        <div class="tip-header">
+                            <span class="tip-emoji">💪</span>
+                            <h4>Seja Realista</h4>
+                        </div>
+                        <p>Sua rotina é diferente dos outros. Não se compare! Se consegue 2 horas, comece com 2 horas. Mas desafie-se!</p>
+                    </div>
+
+                    <div class="tip-box">
+                        <div class="tip-header">
+                            <span class="tip-emoji">🎪</span>
+                            <h4>Uma Meta por Dia</h4>
+                        </div>
+                        <p>Acorde com UMA meta clara. Muitas metas dispersam, nenhuma desmotiva. Uma é o ideal!</p>
+                    </div>
+
+                    <div class="tip-box">
+                        <div class="tip-header">
+                            <span class="tip-emoji">👥</span>
+                            <h4>Participe da Comunidade</h4>
+                        </div>
+                        <p>Quanto mais pertencente você se sentir, mais motivado ficará para cumprir suas metas.</p>
+                    </div>
+
+                    <div class="tip-box">
+                        <div class="tip-header">
+                            <span class="tip-emoji">🍅</span>
+                            <h4>Use o Pomodoro</h4>
+                        </div>
+                        <p>A melhor técnica de produtividade! 25-50 min focado + 5-10 min pausa. Celular em modo avião!</p>
+                    </div>
+
+                    <div class="tip-box">
+                        <div class="tip-header">
+                            <span class="tip-emoji">🔥</span>
+                            <h4>Sangue nos Olhos</h4>
+                        </div>
+                        <p>Não adianta ter o melhor material sem determinação. Acorde com faca nos dentes para suas metas!</p>
+                    </div>
+                </div>
+
+                <div class="pomodoro-section">
+                    <h3>Técnica Pomodoro</h3>
+                    <div class="pomodoro-visual">
+                        <div class="pomo-item">
+                            <div class="pomo-icon">🍅</div>
+                            <p>25-50 min<br><strong>FOCADO</strong></p>
+                        </div>
+                        <div class="pomo-arrow">→</div>
+                        <div class="pomo-item">
+                            <div class="pomo-icon">☕</div>
+                            <p>5-10 min<br><strong>PAUSA</strong></p>
+                        </div>
+                        <div class="pomo-arrow">→</div>
+                        <div class="pomo-item">
+                            <div class="pomo-icon">🍅</div>
+                            <p>25-50 min<br><strong>FOCADO</strong></p>
+                        </div>
+                        <div class="pomo-arrow">→</div>
+                        <div class="pomo-item">
+                            <div class="pomo-icon">☕</div>
+                            <p>15 min<br><strong>DESCANSO</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Palavras Finais -->
+        <section class="section final-words">
+            <div class="container">
+                <div class="final-content">
+                    <h2>Comprometa-se com seu Futuro</h2>
+                    <div class="final-message">
+                        <p class="highlight">Não pule tarefas por preguiça e nem dê o "migué"!</p>
+                        <p class="signature"><strong>Bons estudos!</strong><br>Irmãos Polícia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Irmãos Polícia - Todos os direitos reservados</p>
+            <p><a href="https://irmaospolicia.com.br/" target="_blank">irmaospolicia.com.br</a></p>
+        </div>
+    </footer>
+
+    <!-- Modal para detalhes -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
