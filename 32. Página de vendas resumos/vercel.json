@@ -1,5 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/jantar-aprovados.html" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
