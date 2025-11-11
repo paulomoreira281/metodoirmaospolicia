@@ -18,7 +18,7 @@
     --navy: #0C0C0C;
 
     /* Event Colors */
-    --gold: #FFD700;
+    --gold: #f3eed1;
     --gold-dark: #B8860B;
     --gold-light: #FFF8DC;
 
@@ -57,7 +57,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -563,13 +563,13 @@ body {
 
 /* Dinner Hero */
 .dinner-hero {
-    min-height: 100vh;
+    min-height: 90vh;
     background: linear-gradient(135deg, var(--black) 0%, var(--navy) 50%, var(--dark-brown) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -629,10 +629,10 @@ body {
 
 .dinner-title {
     font-family: 'Inter', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.1;
     text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
 }
@@ -645,29 +645,29 @@ body {
 }
 
 .dinner-tagline {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: var(--gold);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: 400;
     font-style: italic;
 }
 
 .dinner-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     opacity: 0.9;
 }
 
 /* Elegant Date/Time Display */
 .dinner-info-elegant {
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .elegant-divider {
     height: 2px;
     background: linear-gradient(to right, transparent, var(--gold), transparent);
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .dinner-date-time {
@@ -684,16 +684,16 @@ body {
 }
 
 .date-number {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--gold);
     line-height: 1;
 }
 
 .date-month {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -714,23 +714,31 @@ body {
 }
 
 .text-elegant {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white);
 }
 
 /* Luxury Countdown */
+.luxury-countdown {
+    margin-bottom: 30px;
+}
+
 .luxury-countdown .countdown-item {
     background: rgba(255, 215, 0, 0.1);
     border: 2px solid var(--gold);
+    padding: 15px 10px;
+    min-width: 80px;
 }
 
 .luxury-countdown .countdown-number {
     color: var(--gold);
     text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    font-size: 2rem;
 }
 
 .luxury-countdown .countdown-label {
     color: var(--gold-light);
+    font-size: 0.8rem;
 }
 
 /* Dinner CTA */
